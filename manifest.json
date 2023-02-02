@@ -1,17 +1,22 @@
 {
-    "short_name":"pagina1",
-    "name":"creando page",
-    "icons":[
+
+    "short_name": "Pagina1",
+    "name": "Creando Pagina 1",
+    "icons": [
         {
-            "src":"aña.jpg",
-            "sizes": "192 x 192",
-            "type" : "image/jpg"
+            "src": "img/among.png",
+            "sizes": "192x192",
+            "type": "image/png"
         }
+    
     ],
-    "start_url": "index.html",
-    "backgraund_color": "#f9d627",
-    "display": "standlore",
+
+
+    "start_url": "html/index.html",
+    "background_color": "#f9d637",
+    "display": "standalone",
     "scope": "/",
-    "theme_color":"#f9d627",
-    "description":"awa de UwU"
+    "theme_color": "#f9d637",
+    "description": "Weather forecast information"
+
 }
