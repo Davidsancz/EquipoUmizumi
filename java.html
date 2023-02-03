@@ -1,35 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
-    <script type="text/javascript">
-        alert("Hola");
-    </script>
-    <script type="text/javascript" src="script1.js"></script>
-    <script type="text/javascript" src="function.js"></script>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
+    <title>Página Matématicas</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-
-
 <body>
-    <div id="div1">
-
+    <div class="container-fluid bg-danger">
+        <nav class="navbar navbar-inverse navbar-light bg-warning navbar-toggleable-md">
+            <img class="image-fluid" src="Matematicas.png" width="100px" height="100px">
+            <a class="navbar-brand text-info" href="../HTML/Index.html" style="font-size: 40px;">Página de la matemáticas</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="navbar-nav">
+                    <div class="row">
+                        <div class="col-12">
+                            <a class="nav-item nav-link active ml-5" href="../HTML/Index.html">Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-4">
+                <h1 class="text-center text-light">Sumar</h1>
+                <form class="form-group">
+                    <label class="text-light">Ingresa un número:</label>
+                    <input type="number" class="form-control" id="numero1">
+                    <label class="text-light">Ingresa otro número:</label>
+                    <input type="number" class="form-control" id="numero2"> 
+                    <button type="button" class="btn btn-info btn-block mt-3" id="Btnsumar">Sumar</button>
+                    <div id="imprimirresultadosuma" class="alert alert-success mt-3" role="alert"></div>
+                </form>
+            </div>
+            <div class="col-4">
+                <h1 class="text-center text-light">Restar</h1>
+                <form class="form-group">
+                    <label class="text-light">Ingresa un número:</label>
+                    <input type="number" class="form-control" id="numero3">
+                    <label class="text-light">Ingresa otro número:</label>
+                    <input type="number" class="form-control" id="numero4">
+                    <button type="button" class="btn btn-info btn-block mt-3" id="Btnrestar">Restar</button>
+                    <div id="imprimirresultadoresta" class="alert alert-success mt-3" role="alert"></div>
+                </form>
+            </div>
+            <div class="col-4">
+                <h1 class="text-center text-light">Multiplicar</h1>
+                <form action="" class="form-group">
+                    <label class="text-light">Ingresa un número:</label>
+                    <input type="number" class="form-control" id="numero5">
+                    <label class="text-light">Ingresa otro número:</label>
+                    <input type="number" class="form-control" id="numero6">
+                    <button type="button" class="btn btn-info btn-block mt-3" id="Btnmultiplicar">Multiplicar</button>
+                    <div id="imprimirresultadomultiplicar" class="alert alert-success mt-3" role="alert"></div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <h1 class="text-center text-light">División</h1>
+                <form class="form-group text-light">
+                    <label class="text-light">Ingresa un número:</label>
+                    <input type="number" class="form-control" id="numero7">
+                    <label class="text-light">Ingresa otro número:</label>
+                    <input type="number" class="form-control" id="numero8">
+                    <button type="button" class="btn btn-info btn-block mt-3" id="Btndividir">Dividir</button>
+                    <div id="imprimirresultadodivision" class="alert alert-success mt-3" role="alert"></div>
+                </form>
+            </div>
+            <div class="col-4">
+                <h1 class="text-center text-light">Números Ascendentes</h1>
+                <form class="form-group">
+                    <button type="button" class="btn btn-info btn-block mt-3" id="Btnnumeros">Mostrar números</button>
+                    <div id="imprimirresultadonúmeros" class="alert alert-success mt-3" role="alert"></div>
+                </form>
+            </div>
+            <div class="col-4">
+                <h1 class="text-center text-light">Verificación Calificaciones</h1>
+                <form class="form-group">
+                    <label class="text-light">Ingresa una calificación:</label>
+                    <input type="number" class="form-control" id="numero11">
+                    <button type="button" class="btn btn-info btn-block mt-3" id="Btnverificar">Verificar</button>
+                    <div id="imprimirresultadoverificar" class="alert alert-warning mt-3"></ul>
+                    <audio src="Reprobada.mp3" id="audio"></audio>
+                </form>
+            </div>
+        </div>
+        <!-- ----------------------------------- -->
+        <div class="row">
+            <div class="col-4">
+                <h1 class="text-center text-light">Area cuadrado</h1>
+                <form class="form-group text-light">
+                    <label class="text-light">Ingresa la base:</label>
+                    <input type="number" class="form-control" id="basec">
+                    <label class="text-light">Ingresa la altura:</label>
+                    <input type="number" class="form-control" id="alturac">
+                    <button type="button" class="btn btn-info btn-block mt-3" id="Btndareac">Calcular</button>
+                    <div id="imprimirresultadoarea" class="alert alert-success mt-3" role="alert"></div>
+                </form>
+            </div>
+            <div class="col-4">
+                <h1 class="text-center text-light">Area rectangulo</h1>
+                <form class="form-group text-light">
+                    <label class="text-light">Ingresa la base</label>
+                    <input type="number" class="form-control" id="baser">
+                    <label class="text-light">Ingresa la altura</label>
+                    <input type="number" class="form-control" id="alturar">
+                    <button type="button" class="btn btn-info btn-block mt-3" id="Btndarear">Calcular</button>
+                    <div id="imprimirresultadoarear" class="alert alert-success mt-3" role="alert"></div>
+                </form>
+            </div>
+            <div class="col-4">
+                <h1 class="text-center text-light">Descuentos</h1>
+                <form class="form-group">
+                    <label class="text-light">Ingresa el precio</label>
+                    <input type="number" class="form-control" id="numero11">
+                    <button type="button" class="btn btn-info btn-block mt-3" id="Btnverificar">Verificar</button>
+                    <ul id="imprimirresultadoverificar"></ul>
+                </form>
+            </div>
+        </div>
     </div>
-    <button onclick="saludar()">Saludo</button>
-    <input type="text" name="ancho" id="ancho">
-    <input type="text" name="ancho" id="alto">
-    <button onclick="area()">Area de la figura</button>
-
-    <script type="javascript" src="main.js"></script>
-</body>
-
-
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="App.js"></script>
+    </body>
 </html>
-
-<script type="text/javascript" src="script2.js"></script>
